@@ -103,10 +103,12 @@ body {
 .header-contact svg {
   margin-right: 10px;
 }
-.header-contacts:hover svg{
+.header-contacts:hover svg,
+.header-contacts:focus svg{
   color: var(--accent-color);
 }
-.header-contacts:hover svg{
+.header-contacts:hover svg,
+.header-contacts:focus svg{
   fill: currentColor;
 }
 .header-contact .header-contacts{
@@ -426,10 +428,12 @@ border-radius: 0px 0px 4px 4px;
   margin: 0 auto;
   padding: 0 15px;
 }
-.icon-partners:hover svg{
+.icon-partners:hover svg ,
+.icon-partners:focus svg{
   color: var(--accent-color);
 }
-.icon-partners:hover svg{
+.icon-partners:hover svg,
+.icon-partners:focus svg{
   fill: currentColor;
 }
 
