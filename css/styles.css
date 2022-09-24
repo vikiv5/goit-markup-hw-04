@@ -9,7 +9,6 @@
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
-
 h1,
 h2,
 h3,
@@ -102,14 +101,14 @@ body {
   margin-right: 10px;
 }
 .header-contacts:hover svg,
-.header-contacts:focus svg{
+.header-contacts:focus svg {
   color: var(--accent-color);
 }
 .header-contacts:hover svg,
-.header-contacts:focus svg{
+.header-contacts:focus svg {
   fill: currentColor;
 }
-.header-contact .header-contacts{
+.header-contact .header-contacts {
   display: flex;
   align-items: center;
 }
@@ -120,7 +119,7 @@ body {
   margin-right: 40px;
 }
 
-.contacts-icon{
+.contacts-icon {
   fill: var(--secondary-text-color);
 }
 
@@ -132,11 +131,10 @@ body {
   display: flex;
   margin-left: auto;
 }
-.phone{
-  fill:var(--secondary-text-color);
-  
+.phone {
+  fill: var(--secondary-text-color);
 }
-.mail{
+.mail {
   fill: var(--secondary-text-color);
 }
 
@@ -164,11 +162,17 @@ body {
 /* section hero */
 .hero {
   padding: 200px 0px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero.jpg");
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../img/hero.jpg");
   background-repeat: no-repeat;
-  background-size:cover ;
-  margin: auto;
+  background-size: cover;
+  margin: 0 auto;
   text-align: center;
+  max-width: 1600px;
+  background-color: #c4c4c4;
 }
 .hero-title {
   margin: 0 auto;
@@ -195,12 +199,14 @@ body {
   border-color: transparent;
   padding: 10px 32px;
   margin-top: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--button-color-active);
   color: var(--discription-text-color);
   cursor: pointer;
+  
 }
 
 .btn {
@@ -223,6 +229,7 @@ body {
   background-color: var(--accent-color);
   color: var(--discription-text-color);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* section about*/
 
@@ -238,7 +245,6 @@ body {
   line-height: 1.71;
   color: var(--secondary-text-color);
   width: 270px;
-  
 }
 .features-list {
   display: flex;
@@ -288,8 +294,9 @@ body {
 .team-name {
   background-color: var(--discription-text-color);
   width: calc((100%-90px) / 4);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-img {
   display: block;
@@ -318,23 +325,23 @@ border-radius: 0px 0px 4px 4px;
 }
 .team-items-social {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   gap: 10px;
   margin-top: 16px;
 }
 .social-style {
-  width: 44px;;
+  width: 44px;
   height: 44px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   background-color: var(--discription-text-color);
-  fill:#AFB1B8;
-  display:flex;
+  fill: #afb1b8;
+  display: flex;
 }
 .social-style:hover,
-.social-style:focus{
+.social-style:focus {
   background-color: var(--accent-color);
   fill: var(--discription-text-color);
 }
@@ -356,16 +363,15 @@ border-radius: 0px 0px 4px 4px;
 }
 .project-img {
   width: 370px;
-  
 }
-.project-img:hover,
-.project-img:focus {
-  box-shadow: 0px 3px 3px rgb(0 0 0 / 25%) , 0px 3px 3px rgb(0 0 0 / 25%), 0px 1px 2px rgb(0 0 0 / 12%);;
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 3px 3px rgb(0 0 0 / 25%), 0px 3px 3px rgb(0 0 0 / 25%),
+    0px 1px 2px rgb(0 0 0 / 12%);
 }
-.project-link{
+.project-link {
   display: block;
 }
-
 
 .projects-list h2 {
   font-weight: 700;
@@ -386,6 +392,7 @@ border-radius: 0px 0px 4px 4px;
 }
 .description {
   margin-bottom: 4px;
+  color: var(--primary-text-color);
 }
 
 .description-text {
@@ -393,7 +400,6 @@ border-radius: 0px 0px 4px 4px;
   border-bottom: 1px solid rgba(238, 238, 238, 1);
   border-left: 1px solid rgba(238, 238, 238, 1);
   border-right: 1px solid rgba(238, 238, 238, 1);
-
 }
 .partners-list {
   display: flex;
@@ -401,38 +407,47 @@ border-radius: 0px 0px 4px 4px;
   align-items: center;
   gap: 30px;
 }
-.partners-title{
+.partners-title {
   margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1, 16;
+  text-align: center;
 }
 
-.svg-partners{
+.svg-partners {
   width: 106px;
   height: 60px;
 }
-.icon-partners{
+.icon-partners {
   justify-content: center;
   display: flex;
   align-items: center;
   width: 170px;
   height: 92px;
   border-radius: 4px;
-  fill: #AFB1B8;
-  border: 1px solid #AFB1B8;
-
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
 }
-.container-partners{
+.container-partners {
   text-align: center;
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
-.icon-partners:hover svg ,
-.icon-partners:focus svg{
+.icon-partners:hover svg,
+.icon-partners:focus svg {
   color: var(--accent-color);
 }
+
 .icon-partners:hover svg,
-.icon-partners:focus svg{
+.icon-partners:focus svg {
   fill: currentColor;
+}
+.icon-partners:hover,
+.icon-partners:focus {
+  border: 1px solid var(--accent-color);
 }
 
 /* footer */
@@ -461,15 +476,14 @@ border-radius: 0px 0px 4px 4px;
   color: var(--discription-text-color);
 }
 .footer-text {
-font-family: 'Roboto';
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color:var(--discription-text-color);
-margin-bottom: 20px;
-
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--discription-text-color);
+  margin-bottom: 20px;
 }
 .container-footer {
   display: flex;
@@ -478,16 +492,15 @@ margin-bottom: 20px;
   margin: 0 auto;
   padding: 0 15px;
 }
-.footer1{
+.footer1 {
   margin-right: 70px;
 }
 
-.foooter-box{
+.foooter-box {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  
 }
 .footer-social-item {
   display: flex;
@@ -506,6 +519,6 @@ margin-bottom: 20px;
   fill: var(--discription-text-color);
 }
 .footer-social:hover,
-.footer-social:focus{
+.footer-social:focus {
   background-color: var(--accent-color);
 }
